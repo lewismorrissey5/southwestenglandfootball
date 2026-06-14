@@ -1,0 +1,34 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "pages"
+    label: "Main Website Text"
+    files:
+      - file: "content/home.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - {label: "Main Heading", name: "title", widget: "string"}
+          - {label: "Hero Subtitle", name: "subtitle", widget: "text"}
+          - {label: "About Heading", name: "about_title", widget: "string"}
+          - {label: "About Text", name: "about_body", widget: "text"}
+          - {label: "Membership Heading", name: "membership_title", widget: "string"}
+          - {label: "Membership Text", name: "membership_body", widget: "text"}
+          - {label: "Contact Email", name: "email", widget: "string"}
+
+  - name: "blog"
+    label: "Blog / News"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Summary", name: "summary", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
