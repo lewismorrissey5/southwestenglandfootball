@@ -1,0 +1,1 @@
+Upload all html files and styles.css to the TOP LEVEL of GitHub. Do not delete your assets folder. Commit changes. In Netlify > Forms, add email notifications for player-enquiry to info@southwestenglandfootball.com.
