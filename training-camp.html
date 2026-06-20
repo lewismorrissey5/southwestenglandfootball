@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>August Training Camp | South West England Representative Squads</title>
+  <meta name="description" content="Book your place for the South West England Representative Squads August Training Camp at Stanley Park, Chippenham.">
+  <style>
+    :root {
+      --navy:#07172f;
+      --navy2:#0c2b55;
+      --red:#c8102e;
+      --gold:#d6a12b;
+      --white:#ffffff;
+      --light:#f5f7fb;
+      --text:#172033;
+      --green:#16a34a;
+    }
+
+    * { box-sizing:border-box; }
+
+    body {
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:var(--light);
+      color:var(--text);
+    }
+
+    .page {
+      max-width:1120px;
+      margin:0 auto;
+      padding:22px 16px 60px;
+    }
+
+    .hero {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:26px;
+      align-items:center;
+      background:linear-gradient(135deg, var(--navy), var(--navy2));
+      color:white;
+      border-radius:30px;
+      padding:28px;
+      box-shadow:0 18px 45px rgba(0,0,0,.25);
+      overflow:hidden;
+    }
+
+    .poster {
+      width:100%;
+      border-radius:22px;
+      box-shadow:0 14px 35px rgba(0,0,0,.35);
+      display:block;
+      background:#10233c;
+    }
+
+    .eyebrow {
+      color:var(--gold);
+      text-transform:uppercase;
+      letter-spacing:2px;
+      font-weight:900;
+      font-size:13px;
+      margin-bottom:12px;
+    }
+
+    h1 {
+      margin:0;
+      font-size:clamp(44px, 8vw, 86px);
+      line-height:.9;
+      text-transform:uppercase;
+      letter-spacing:-1px;
+    }
+
+    .subtitle {
+      font-size:20px;
+      line-height:1.45;
+      color:#edf3ff;
+      font-weight:700;
+      margin:18px 0 0;
+    }
+
+    .grid {
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:14px;
+      margin:24px 0;
+    }
+
+    .card {
+      background:white;
+      border-radius:20px;
+      padding:20px 16px;
+      border:1px solid #e2e7f0;
+      box-shadow:0 8px 22px rgba(0,0,0,.06);
+    }
+
+    .card small {
+      display:block;
+      color:var(--gold);
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:1px;
+      margin-bottom:8px;
+    }
+
+    .card strong {
+      display:block;
+      color:var(--navy);
+      font-size:20px;
+      line-height:1.25;
+    }
+
+    .section {
+      background:white;
+      border-radius:24px;
+      padding:30px;
+      margin-top:20px;
+      border:1px solid #e2e7f0;
+      box-shadow:0 8px 22px rgba(0,0,0,.05);
+    }
+
+    h2 {
+      margin:0 0 14px;
+      color:var(--navy);
+      font-size:34px;
+      text-transform:uppercase;
+      letter-spacing:-.5px;
+    }
+
+    p {
+      font-size:17px;
+      line-height:1.7;
+      margin:12px 0;
+    }
+
+    .development-grid {
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:14px;
+      margin-top:22px;
+    }
+
+    .dev-card {
+      background:var(--navy);
+      color:white;
+      border-radius:18px;
+      padding:20px;
+      min-height:150px;
+    }
+
+    .dev-card span {
+      display:block;
+      color:var(--gold);
+      font-size:34px;
+      font-weight:900;
+      margin-bottom:8px;
+    }
+
+    .dev-card h3 {
+      margin:0 0 8px;
+      text-transform:uppercase;
+      font-size:17px;
+      letter-spacing:.5px;
+    }
+
+    .dev-card p {
+      font-size:14px;
+      color:#e8eef8;
+      line-height:1.5;
+      margin:0;
+    }
+
+    .pathway {
+      background:#fbf7ee;
+      border-left:6px solid var(--gold);
+    }
+
+    .pathway-list {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+      margin-top:20px;
+    }
+
+    .pathway-item {
+      background:white;
+      border:1px solid #eadbb4;
+      border-radius:18px;
+      padding:20px;
+      font-weight:900;
+      color:var(--navy);
+      text-align:center;
+      text-transform:uppercase;
+      letter-spacing:.5px;
+    }
+
+    .booking {
+      text-align:center;
+      border:3px solid var(--gold);
+      background:linear-gradient(135deg,#ffffff,#fff8e6);
+    }
+
+    .limited {
+      margin:0 0 8px;
+      color:var(--red);
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:1px;
+    }
+
+    .price {
+      font-size:62px;
+      font-weight:900;
+      line-height:1;
+      color:var(--navy);
+      margin:6px 0 10px;
+    }
+
+    .button {
+      display:inline-block;
+      background:var(--gold);
+      color:var(--navy);
+      text-decoration:none;
+      padding:18px 34px;
+      border-radius:999px;
+      font-size:22px;
+      font-weight:900;
+      text-transform:uppercase;
+      margin-top:14px;
+      box-shadow:0 10px 25px rgba(214,161,43,.35);
+    }
+
+    .button.dark {
+      background:var(--navy);
+      color:white;
+      font-size:15px;
+      padding:14px 22px;
+      margin-top:20px;
+    }
+
+    .note {
+      color:#5d6878;
+      font-size:14px;
+      max-width:760px;
+      margin:16px auto 0;
+    }
+
+    .success {
+      display:none;
+      min-height:100vh;
+      align-items:center;
+      justify-content:center;
+      padding:28px 16px;
+      background:linear-gradient(135deg,var(--navy),var(--navy2));
+      color:white;
+      text-align:center;
+    }
+
+    .success-box {
+      max-width:720px;
+      background:white;
+      color:var(--text);
+      border-radius:28px;
+      padding:40px 24px;
+      box-shadow:0 18px 45px rgba(0,0,0,.28);
+    }
+
+    .tick {
+      width:88px;
+      height:88px;
+      margin:0 auto 18px;
+      border-radius:50%;
+      background:var(--green);
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:54px;
+      font-weight:900;
+    }
+
+    .success h1 {
+      color:var(--navy);
+      font-size:clamp(38px,8vw,72px);
+      margin:0;
+    }
+
+    .success p {
+      color:#26364f;
+      font-size:18px;
+    }
+
+    .footer {
+      text-align:center;
+      margin-top:26px;
+      color:#657084;
+      font-weight:700;
+    }
+
+    @media(max-width:900px) {
+      .hero { grid-template-columns:1fr; }
+      .grid { grid-template-columns:1fr 1fr; }
+      .development-grid { grid-template-columns:1fr 1fr; }
+      .pathway-list { grid-template-columns:1fr; }
+    }
+
+    @media(max-width:560px) {
+      .page { padding:16px 12px 40px; }
+      .hero { padding:20px; border-radius:24px; }
+      .grid { grid-template-columns:1fr; }
+      .development-grid { grid-template-columns:1fr; }
+      .section { padding:22px; }
+      h2 { font-size:27px; }
+      .price { font-size:54px; }
+      .button { width:100%; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page" id="camp-page">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">South West England Representative Squads</div>
+        <h1>August Training Camp</h1>
+        <p class="subtitle">
+          A high-quality football development camp for ambitious U8-U13 players,
+          built around ball mastery, decision-making, 1v1 detail, movement and game-realistic practice.
+        </p>
+      </div>
+
+      <img class="poster" src="august-training-camp.png" alt="South West England August Training Camp poster">
+    </section>
+
+    <section class="grid">
+      <div class="card"><small>Date</small><strong>Wednesday 5th August</strong></div>
+      <div class="card"><small>Time</small><strong>10:00am – 1:00pm</strong></div>
+      <div class="card"><small>Venue</small><strong>Stanley Park, Chippenham</strong></div>
+      <div class="card"><small>Age Groups</small><strong>U8 – U13</strong></div>
+    </section>
+
+    <section class="section">
+      <h2>About The Camp</h2>
+      <p>
+        Our monthly Training Camps are designed to give players a professional, challenging and enjoyable
+        environment where they can develop their individual game and compete alongside other motivated players
+        from across the region.
+      </p>
+      <p>
+        The camp is built around high repetition, ball contact, technical confidence and intelligent decision-making.
+        Players will be challenged through progressive practices that develop individual detail before transferring
+        into opposed and game-realistic situations.
+      </p>
+
+      <div class="development-grid">
+        <div class="dev-card"><span>01</span><h3>Technical Detail</h3><p>Ball mastery, receiving skills, passing detail, dribbling, finishing and 1v1 confidence.</p></div>
+        <div class="dev-card"><span>02</span><h3>Game Intelligence</h3><p>Scanning, movement, decision-making, support angles and understanding when to play forward.</p></div>
+        <div class="dev-card"><span>03</span><h3>Physical Output</h3><p>Speed, agility, changes of direction, balance, intensity and football-specific movement.</p></div>
+        <div class="dev-card"><span>04</span><h3>Competitive Practice</h3><p>Small-sided games and realistic scenarios that allow players to express themselves.</p></div>
+      </div>
+    </section>
+
+    <section class="section pathway">
+      <h2>Opportunities Beyond The Camp</h2>
+      <p>
+        These camps are an important part of the South West England Representative pathway. Players who attend
+        throughout the season may be considered for further representative programme activity across the 2026/27 season.
+      </p>
+
+      <div class="pathway-list">
+        <div class="pathway-item">Regular Academy Fixtures</div>
+        <div class="pathway-item">Showcase Events</div>
+        <div class="pathway-item">International Tournaments</div>
+      </div>
+
+      <p>
+        The programme is designed to complement a player's current club football, not replace it. It gives players
+        an additional environment to develop, test themselves and represent the South West.
+      </p>
+    </section>
+
+    <section class="section booking">
+      <p class="limited">Limited spaces available</p>
+      <h2>Book Your Place</h2>
+      <div class="price">£25</div>
+      <p>Secure your place through Stripe. Apple Pay, Google Pay and card payments are accepted.</p>
+
+      <a class="button" href="https://buy.stripe.com/fZu14ncAFerX9jP5Mp53O00" target="_blank" rel="noopener">Confirm Your Spot (Checkout)</a>
+
+      <p class="note">
+        Stripe will show confirmation after payment and send a receipt to the email address used at checkout.
+        Your booking is confirmed once payment has been completed.
+      </p>
+
+      <a class="button dark" href="index.html">Back To Home Page</a>
+    </section>
+
+    <div class="footer">One Region. One Goal.<br>southwestenglandfootball.com</div>
+  </main>
+
+  <section class="success" id="success-page">
+    <div class="success-box">
+      <div class="tick">✓</div>
+      <h1>Place Confirmed</h1>
+      <p>Thank you for booking onto the August Training Camp with <strong>South West England Representative Squads</strong>.</p>
+      <p>We look forward to seeing you at Stanley Park, Chippenham on <strong>Wednesday 5th August, 10:00am – 1:00pm</strong>.</p>
+      <p>A Stripe receipt will be sent to the email address used at checkout.</p>
+      <a class="button dark" href="index.html">Go Back To Home Page</a>
+    </div>
+  </section>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("success") === "true") {
+      document.getElementById("camp-page").style.display = "none";
+      document.getElementById("success-page").style.display = "flex";
+    }
+  </script>
+
+</body>
+</html>
